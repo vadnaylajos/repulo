@@ -11,6 +11,6 @@ class Booking:
 
     def __str__(self):
         return (
-            f"Reservation ID: {self.id}, Passenger: {self.passenger}, "
-            f"Flight: {self.flight.details()}, Booking Time: {self.time}, Flight Date: {self.date}"
+            f"Foglalási Azonosító: {self.id}, Utas: {self.passenger}, "
+            f"Járat: {self.flight}, Foglalás Időpontja: {self.time}, Járat Dátuma: {self.date}"
         )

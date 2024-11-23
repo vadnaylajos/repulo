@@ -8,11 +8,11 @@ class Airline:
 
     def display_flights(self):
         if not self.flights:
-            print("No flights available.")
+            print("Nincsenek elérhető járatok. Úgy tűnik, most egy csendes nap van!")
         else:
-            print(f"\nAvailable Flights ({self.name}):")
+            print(f"\nElérhető Járatok ({self.name}):")
             for flight in self.flights:
-                print(flight.number)
+                print(f"Járatszám: {flight.number}")
 
     def __str__(self):
-        return f"Airline: {self.name}, Total Flights: {len(self.flights)}"
+        return f"Légitársaság: {self.name}, Összes Járat: {len(self.flights)}"

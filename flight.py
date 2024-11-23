@@ -12,8 +12,8 @@ class Flight(ABC):
 
 class DomesticFlight(Flight):
     def details(self):
-        return f"Domestic Flight - Number: {self.number}, Destination: {self.destination}, Price: {self.price} Ft"
+        return f"Belföldi Járat - Járatszám: {self.number}, Célállomás: {self.destination}, Ár: {self.price} Ft"
 
 class InternationalFlight(Flight):
     def details(self):
-        return f"International Flight - Number: {self.number}, Destination: {self.destination}, Price: {self.price} Ft"
+        return f"Nemzetközi Járat - Járatszám: {self.number}, Célállomás: {self.destination}, Ár: {self.price} Ft"
